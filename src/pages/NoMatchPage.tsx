@@ -18,3 +18,4 @@ export const NoMatchPage = () => (
     <Footer company={COMPANY} startDate={START_DATE} />
   </>
 );
+NoMatchPage.displayName = "NoMatchPage";

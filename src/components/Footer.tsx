@@ -28,3 +28,4 @@ export const Footer = ({ company, startDate, endDate }: FooterProps) => {
     </FooterText>
   );
 };
+Footer.displayName = "Footer";
