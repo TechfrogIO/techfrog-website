@@ -14,6 +14,8 @@ const config: Config = {
     "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.ts",
     "^uuid$": require.resolve("uuid"),
   },
+  preset: "ts-jest",
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   testEnvironment: "jsdom",
   transform: {
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",

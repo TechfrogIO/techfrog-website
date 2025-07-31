@@ -3,24 +3,29 @@ import React from "react";
 
 export interface FooterProps {
   company: string;
-  startDate: string;
-  endDate?: string;
+  startCopyDate: string;
+  endCopyDate?: string;
 }
 
 const FooterText = styled.div({
   display: "flex",
   justifyContent: "center",
   width: "100%",
-  backgroundColor: "#282c34",
-  fontSize: ".8rem",
+  fontSize: "1rem",
   color: "#fff",
   paddingBlock: "2rem 3rem",
 });
 
-export const Footer = ({ company, startDate, endDate }: FooterProps) => {
-  const copyrightText = `© ${startDate}${
-    endDate ? `-${endDate}` : ""
-  } ${company}. All rights reserved.`;
+/**
+ * Stylized website footer.
+ *
+ * @param {string} company - data to display in header
+ * @param {string} startCopyDate - start of copyrite period
+ * @param {string} endCopyDate - optional, end of copyrite period
+ * @returns {ReactElement}
+ */
+export const Footer = ({ company, startCopyDate, endCopyDate }: FooterProps) => {
+  const copyrightText = `© ${startCopyDate}${endCopyDate ? `-${endCopyDate}` : ""} ${company}. All rights reserved.`;
 
   return (
     <FooterText>

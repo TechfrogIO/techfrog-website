@@ -3,19 +3,13 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "react-app",
-    "react-app/jest",
-  ],
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: ["src/**/*.tsx", "src/**/*.ts"],
       parserOptions: {
         sourceType: "script",
       },
@@ -25,8 +19,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    warnOnUnsupportedTypeScriptVersion: false,
   },
-  plugins: ["@typescript-eslint", "react"],
+  plugins: ["@typescript-eslint"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],

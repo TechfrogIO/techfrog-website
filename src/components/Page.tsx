@@ -1,17 +1,28 @@
 import styled from "@emotion/styled";
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
+import { COMPANY_NAME, COPY_START_DATE } from "../constants/textConstants";
+import { Footer } from "./Footer";
 
-interface PageProps {
-  children: any;
+export interface PageProps {
+  children: ReactElement[];
 }
 
 const PageContainer = styled.div({
   width: "100%",
   minHeight: "100vh",
-  backgroundColor: "#282c34",
+  backgroundColor: "#003366",
 });
 
+/**
+ * Top level component for a specific type of site page (ie. InfoPage), sets overall page style and adds a footer.
+ *
+ * @param {ReactElement} children - content elements
+ * @returns {ReactElement}
+ */
 export const Page = ({ children }: PageProps) => (
-  <PageContainer>{children}</PageContainer>
+  <PageContainer>
+    {children.length ? children.map((child: ReactNode, i) => <div key={i}>{child}</div>) : <></>}
+    <Footer company={COMPANY_NAME} startCopyDate={COPY_START_DATE} />
+  </PageContainer>
 );
-PageContainer.displayName = "PageContainer";
+Page.displayName = "PageContainer";

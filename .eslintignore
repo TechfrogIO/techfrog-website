@@ -1,0 +1,6 @@
+# .eslintignore
+.*
+*.config.ts
+*.setup.ts
+*.yml
+*.json
