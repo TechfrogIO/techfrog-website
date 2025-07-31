@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - nvm install 18
+        - nvm use 18
         - yarn install --frozen-lockfile
     build:
       commands:
