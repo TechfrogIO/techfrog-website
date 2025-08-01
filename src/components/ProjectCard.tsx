@@ -19,7 +19,7 @@ const CardContentContainer = styled.div([
   baseCardStyle,
   baseFontStyle,
   {
-    height: "500px",
+    minHeight: "350px",
   },
 ]);
 

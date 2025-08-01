@@ -33,6 +33,7 @@ const DetailsContainer = styled.div([
   baseCardStyle,
   baseFontStyle,
   {
+    minWidth: "200px",
     paddingBlock: "1rem",
     paddingInline: ".5rem 1.5rem",
     marginBottom: "3rem",
