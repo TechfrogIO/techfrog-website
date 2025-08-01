@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { baseCardBorderStyle, baseCardContentStyle } from "../styles/baseStyles";
+import { baseCardContentStyle, baseCardStyle, baseFontStyle } from "../styles/baseStyles";
 
 export interface EducationCardProps {
   college: string;
@@ -16,11 +16,16 @@ export interface EducationCardDataProps extends EducationCardProps {
 
 const CardContentContainer = styled.div([
   baseCardContentStyle,
-  baseCardBorderStyle,
+  baseCardStyle,
+  baseFontStyle,
   {
-    height: "160px",
+    height: "200px",
   },
 ]);
+
+const CollegeName = styled.h4({
+  marginBlockEnd: "-.2rem",
+});
 
 const DegreeListItem = styled.li({
   margin: "0 0 .5rem",
@@ -38,7 +43,7 @@ const DegreeListItem = styled.li({
  */
 export const EducationCard = ({ college, degree, major, minor, graduation }: EducationCardProps) => (
   <CardContentContainer>
-    <strong>{college}</strong>
+    <CollegeName>{college}</CollegeName>
     <ul>
       <DegreeListItem>{degree}</DegreeListItem>
       <DegreeListItem>

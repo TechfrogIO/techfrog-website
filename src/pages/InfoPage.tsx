@@ -6,7 +6,7 @@ import { ProjectCard, ProjectCardDataProps } from "../components/ProjectCard";
 import { SiteHeader } from "../components/SiteHeader";
 import { InfoPageStyle } from "../constants/appConstants";
 import { COMPANY_HEADING, COMPANY_NAME, RESUME_HEADING, RESUME_NAME } from "../constants/textConstants";
-import { baseCardBorderStyle } from "../styles/baseStyles";
+import { baseCardStyle, baseFontStyle } from "../styles/baseStyles";
 
 export interface DetailsListProps {
   id: string;
@@ -20,11 +20,9 @@ export interface InfoPageProps {
   educationCardData?: EducationCardDataProps[];
 }
 
-const ContentContainer = styled.div({
+const ContentContainer = styled.div(baseFontStyle, {
   minHeight: "70vh",
-  backgroundColor: "#f2f2f2",
-  color: "#000",
-  fontSize: "1.2rem",
+  backgroundColor: "#e6e6e6",
   paddingBlock: "1rem",
   paddingInline: "3rem",
   marginBlock: 0,
@@ -32,7 +30,8 @@ const ContentContainer = styled.div({
 });
 
 const DetailsContainer = styled.div([
-  baseCardBorderStyle,
+  baseCardStyle,
+  baseFontStyle,
   {
     paddingBlock: "1rem",
     paddingInline: ".5rem 1.5rem",

@@ -92,8 +92,8 @@ export const RESUME_DETAILS: DetailsListProps[] = [
         <ul>
           <li>
             Git version control, code reviews (both giving and receiving feedback), project planning & management
-            (Agile, Scrum, Kanban, hybrid types - team dependent), working from Figma UX mock-ups, code
-            pipelines/testing/deployment (beta, pre-prod, prod)
+            (Agile, Scrum, Kanban, hybrid types - team dependent), working from Figma UX mock-ups, code pipelines /
+            testing / deployment (beta, pre-prod, prod)
           </li>
         </ul>
       </>
@@ -112,7 +112,7 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
         <span> & </span>
         <ExternalLink linkText="techfrog.io/resume" linkAddress="http://techfrog.io/resume" />
         <span>
-          &nbsp;are a demo of a React application utilizing many of the above-listed font-end technologies; all files
+          &nbsp;are a demo of a React application utilizing many of the above-listed front-end technologies; all files
           are available in a public repository on Github as an example of app configuration and coding style.
         </span>
       </>
@@ -123,7 +123,7 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
     },
   },
   {
-    id: "aplus",
+    id: "aplus1",
     toolName: `${AMZN_SELLING_PARTNERS_TOOL}: ${AMZN_APLUS_NAME}`,
     projectName: "Product Manager Page",
     projectDetails:
@@ -134,7 +134,7 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
     },
   },
   {
-    id: "aplus",
+    id: "aplus2",
     toolName: `${AMZN_SELLING_PARTNERS_TOOL}: ${AMZN_APLUS_NAME}`,
     projectName: "Technical Specifications Module & Editor",
     projectDetails:
@@ -145,7 +145,7 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
     },
   },
   {
-    id: "aplus",
+    id: "aplus3",
     toolName: `${AMZN_SELLING_PARTNERS_TOOL}: ${AMZN_APLUS_NAME}`,
     projectName: "A+ Content Manager - Global Messaging",
     projectDetails:

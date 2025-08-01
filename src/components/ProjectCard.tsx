@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React, { ReactElement } from "react";
-import { baseCardBorderStyle, baseCardContentStyle } from "../styles/baseStyles";
+import { baseCardContentStyle, baseCardStyle, baseFontStyle } from "../styles/baseStyles";
 import { ExternalLink, ExternalLinkProps } from "./ExternalLink";
 
 export interface ProjectCardProps {
@@ -16,9 +16,10 @@ export interface ProjectCardDataProps extends ProjectCardProps {
 
 const CardContentContainer = styled.div([
   baseCardContentStyle,
-  baseCardBorderStyle,
+  baseCardStyle,
+  baseFontStyle,
   {
-    height: "400px",
+    height: "500px",
   },
 ]);
 
