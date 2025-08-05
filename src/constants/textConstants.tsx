@@ -108,9 +108,9 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
     projectName: "Company Info and Resume Pages",
     projectDetails: (
       <>
-        <ExternalLink linkText="techfrog.io" linkAddress="http://techfrog.io" />
+        <ExternalLink linkText="techfrog.io" linkAddress="/" />
         <span> & </span>
-        <ExternalLink linkText="techfrog.io/resume" linkAddress="http://techfrog.io/resume" />
+        <ExternalLink linkText="techfrog.io/resume" linkAddress="/resume" />
         <span>
           &nbsp;are a demo of a React application utilizing many of the above-listed front-end technologies; all files
           are available in a public repository on Github as an example of app configuration and coding style.

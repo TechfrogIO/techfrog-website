@@ -1,18 +1,35 @@
-import { Router } from "@remix-run/router";
 import React from "react";
-import { RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import { InfoPageStyle } from "./constants/appConstants";
+import { COMPANY_DETAILS, EDUCATION_DATA, PROJECT_CARD_DATA, RESUME_DETAILS } from "./constants/textConstants";
+import { InfoPage } from "./pages/InfoPage";
+import { NoMatchPage } from "./pages/NoMatchPage";
 
-export interface AppProps {
-  router: Router;
-}
-
-/**
- * Container for application, utilizes React Router for navigating the app.
- *
- * @param {Router} router
- * @returns {ReactElement}
- */
-export const App = ({ router }: AppProps) => {
-  return <RouterProvider router={router} />;
-};
-App.displayname = "App";
+export const App = () => (
+  <>
+    <Routes>
+      <Route
+        path="/resume"
+        element={
+          <InfoPage
+            infoPageStyle={InfoPageStyle.Resume}
+            detailsList={RESUME_DETAILS}
+            projectCardData={PROJECT_CARD_DATA}
+            educationCardData={EDUCATION_DATA}
+          />
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <InfoPage
+            infoPageStyle={InfoPageStyle.CompanyInfo}
+            detailsList={COMPANY_DETAILS}
+            projectCardData={PROJECT_CARD_DATA}
+          />
+        }
+      />
+      <Route path="*" element={<NoMatchPage />} />
+    </Routes>
+  </>
+);
