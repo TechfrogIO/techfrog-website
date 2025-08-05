@@ -12,16 +12,6 @@ export enum InfoPageStyle {
 export const router = createBrowserRouter(
   createRoutesFromElements([
     <Route
-      path="/"
-      element={
-        <InfoPage
-          infoPageStyle={InfoPageStyle.CompanyInfo}
-          detailsList={COMPANY_DETAILS}
-          projectCardData={PROJECT_CARD_DATA}
-        />
-      }
-    />,
-    <Route
       path="/resume"
       element={
         <InfoPage
@@ -29,6 +19,16 @@ export const router = createBrowserRouter(
           detailsList={RESUME_DETAILS}
           projectCardData={PROJECT_CARD_DATA}
           educationCardData={EDUCATION_DATA}
+        />
+      }
+    />,
+    <Route
+      path="/"
+      element={
+        <InfoPage
+          infoPageStyle={InfoPageStyle.CompanyInfo}
+          detailsList={COMPANY_DETAILS}
+          projectCardData={PROJECT_CARD_DATA}
         />
       }
     />,
