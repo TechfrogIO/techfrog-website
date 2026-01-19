@@ -88,13 +88,13 @@ describe("InfoPage", () => {
 
   it("renders with project cards if optional data is in props", () => {
     render(<InfoPage {...props} />);
-    expect(screen.getAllByText("Past Projects")).toHaveLength(1);
+    expect(screen.getAllByText("Current & Previous Projects")).toHaveLength(1);
   });
 
   it("renders without project cards if optional data is not in props", () => {
     props.projectCardData = undefined;
 
     render(<InfoPage {...props} />);
-    expect(screen.queryByText("Past Projects")).toBeNull();
+    expect(screen.queryByText("Current & Previous Projects")).toBeNull();
   });
 });

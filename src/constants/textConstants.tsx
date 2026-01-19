@@ -103,6 +103,22 @@ export const RESUME_DETAILS: DetailsListProps[] = [
 
 export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
   {
+    id: "tf2",
+    toolName: "Project 'Arrows' (In Development)",
+    projectName: "Archery-related Web App and Admin Site",
+    projectDetails: (
+      <>
+        <p>
+          An archery application and corresponding admin portal, each an AWS Amplify application, with the admin owning
+          the backend resources that are shared to the front-end application via GraphQL. Utilizes AWS Cognito for
+          authorization, AWS DynamoDB for data, AWS S3 for storage, and AWS Lambda for automated function calls.
+        </p>
+        <p>The front-end is a React-based application utilizing Vite for build management.</p>
+        <p>The repositories are private, but the app & admin can be demonstrated upon request.</p>
+      </>
+    ),
+  },
+  {
     id: "tf1",
     toolName: "Techfrog.io Website",
     projectName: "Company Info and Resume Pages",

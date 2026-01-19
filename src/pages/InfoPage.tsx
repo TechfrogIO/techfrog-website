@@ -82,7 +82,7 @@ export const InfoPage = ({ infoPageStyle, detailsList, projectCardData, educatio
 
         {projectCardData ? (
           <div>
-            <h2>Past Projects</h2>
+            <h2>Current & Previous Projects</h2>
             <CardsContainer>
               {projectCardData.map((projectData) => (
                 <ProjectCard
