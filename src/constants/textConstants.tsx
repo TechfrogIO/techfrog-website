@@ -35,8 +35,7 @@ export const COMPANY_DETAILS: DetailsListProps[] = [
   },
   {
     id: "llc",
-    content:
-      "LLC incorporated in Arizona, USA with Professional Liability insurance through biBERK [Parent company: Berkshire Hathaway]",
+    content: "LLC incorporated in Arizona, USA",
   },
 ];
 
@@ -105,7 +104,7 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
   {
     id: "tf2",
     toolName: "Project 'Arrows' (In Development)",
-    projectName: "Archery-related Web App and Admin Site",
+    projectName: "Archery-related Web App and Admin Site by Techfrog",
     projectDetails: (
       <>
         <p>
