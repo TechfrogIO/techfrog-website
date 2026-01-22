@@ -64,7 +64,7 @@ export const RESUME_DETAILS: DetailsListProps[] = [
           <li>
             HTML5, CSS / Emotion CSS, Javascript / TypeScript, React, Redux, Storybook (UX & accessibility testing at
             React component level), Jest, Enzyme, React Testing Library, integration tests, ESLint, Prettier, JSDoc,
-            Webpack, Babel, Yarn, NodeJS, integrating with RESTful APIs
+            Vite, Webpack, Babel, Yarn, NodeJS, integrating with RESTful APIs
           </li>
         </ul>
       </>
@@ -74,10 +74,11 @@ export const RESUME_DETAILS: DetailsListProps[] = [
     id: "techSDE",
     content: (
       <>
-        Backend/AWS services experience (full-stack knowledge was required for on-call rotations):
+        Backend/AWS services experience:
         <ul>
           <li>
-            Java, JUnit, Mockito, DynamoDB / NoSQL, S3, Lambda, Amplify, SNS, SQS, CloudWatch, Cognito, API Gateway
+            Java, JUnit, Mockito, DynamoDB / NoSQL, S3, Lambda, Amplify (Gen 2), SNS, SQS, CloudWatch, Cognito, API
+            Gateway
           </li>
         </ul>
       </>
@@ -91,8 +92,8 @@ export const RESUME_DETAILS: DetailsListProps[] = [
         <ul>
           <li>
             Git version control, code reviews (both giving and receiving feedback), project planning & management
-            (Agile, Scrum, Kanban, hybrid types - team dependent), working from Figma UX mock-ups, code pipelines /
-            testing / deployment (beta, pre-prod, prod)
+            (Agile, Scrum, Kanban, hybrid types – team dependent), working from Figma UX mock-ups, code pipelines /
+            automated testing / deployment (beta, pre-prod, prod)
           </li>
         </ul>
       </>
