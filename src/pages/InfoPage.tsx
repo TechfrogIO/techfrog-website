@@ -53,7 +53,7 @@ const CardsContainer = styled.div({
  *
  * @param {InfoPageStyle} infoPageStyle - Type of info page, determines which content fields are available
  * @param {DetailsListProps[]} detailsList - list of details to display in top info box (minimum required data for page)
- * @param {ProjectCardDataProps[]} projectCards - optional, list of projects
+ * @param {ProjectCardDataProps[]} projectCardData - optional, list of projects
  * @param {EducationCardDataProps[]} educationCardData - optional, list of education history
  * @returns {ReactElement}
  */
