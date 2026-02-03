@@ -105,16 +105,16 @@ export const PROJECT_CARD_DATA: ProjectCardDataProps[] = [
   {
     id: "tf2",
     toolName: "Project 'Arrows' (In Development)",
-    projectName: "Archery-related Web App and Admin Site by Techfrog",
+    projectName: "Target Archery Web App with Admin Dashboard by Techfrog",
     projectDetails: (
       <>
         <p>
-          An archery application and corresponding admin portal, each an AWS Amplify application, with the admin owning
-          the backend resources that are shared to the front-end application via GraphQL. Utilizes AWS Cognito for
-          authorization, AWS DynamoDB for data, AWS S3 for storage, and AWS Lambda for automated function calls.
+          Currently developing a full-stack archery application with admin dashboard, built on AWS Amplify platform. It
+          utilizes AWS Cognito for log-in authentication and user pool groups for conditional rendering (admin vs.
+          authenticated user vs. public pages), AWS DynamoDB for data, AWS S3 for storage and AWS Lambda for automated
+          function calls.
         </p>
-        <p>The front-end is a React-based application utilizing Vite for build management.</p>
-        <p>The repositories are private, but the app & admin can be demonstrated upon request.</p>
+        <p>The front-end is a React application utilizing Vite for build management.</p>
       </>
     ),
   },
