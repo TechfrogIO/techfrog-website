@@ -16,8 +16,8 @@ const PageContainer = styled.div({
 /**
  * Top level component for a specific type of site page (ie. InfoPage), sets overall page style and adds a footer.
  *
- * @param {ReactElement} children - content elements
- * @returns {ReactElement}
+ * @param {ReactElement[]} children - content elements
+ * @returns {ReactElement[]}
  */
 export const Page = ({ children }: PageProps) => (
   <PageContainer>
